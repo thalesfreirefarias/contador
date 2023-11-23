@@ -1,6 +1,8 @@
 let botao = document.querySelector('button');
-var nome = prompt("Digite o seu nome!");
+var nome = prompt ("qual o seu nome?!");
+
 botao.addEventListener('click', somarUm);
+document.getElementById('nome').innerText = 'Bom dia ' + nome;
 
 function somarUm() {
     let elementoH3 = document.querySelector('h3');
